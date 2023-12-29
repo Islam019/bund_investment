@@ -1,4 +1,4 @@
-name: bund_investment
+name: Bund 
 description: "Bund | Investment App"
 publish_to: 'none' 
 version: 1.0.0+1
@@ -14,6 +14,7 @@ dependencies:
   bloc: ^8.1.2
   flutter_native_splash: ^2.3.8
   http: ^1.1.2
+  icons_launcher: ^2.1.6
 
 dev_dependencies:
   flutter_test:
