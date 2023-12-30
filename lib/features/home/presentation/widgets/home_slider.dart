@@ -1,11 +1,20 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:bund/core/themes/app_colors.dart';
 import 'package:bund/core/themes/text_styles.dart';
 import 'package:bund/core/utils/load_assets.dart';
+import 'package:bund/features/home/domain/entities/slide_item.dart';
 import 'package:bund/features/home/presentation/widgets/start_now_button.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+
+List<SlideItem> slideItems = [
+  SlideItem(img: getImg('swiss_banking'), title: 'Standard', imgWidth: 147),
+  SlideItem(img: getImg('cim'), title: 'Plus', imgWidth: 93),
+  SlideItem(img: getImg('ubs'), title: 'Max', imgWidth: 120),
+  SlideItem(img: getImg('ubs'), title: 'Unlimited', imgWidth: 120)
+];
 
 class HomeSlider extends StatefulWidget {
   const HomeSlider({super.key});
@@ -32,8 +41,8 @@ class _HomeSliderState extends State<HomeSlider> {
           carouselController: controller,
           options: CarouselOptions(
               height: 156,
-              viewportFraction: .87,
-              initialPage: 0,
+              viewportFraction: .90,
+              // initialPage: 0,
               enableInfiniteScroll: true,
               autoPlay: true,
               autoPlayInterval: const Duration(seconds: 3),
@@ -44,25 +53,27 @@ class _HomeSliderState extends State<HomeSlider> {
                   currentIndex = index;
                 });
               }),
-          items: [1, 2, 3, 4, 5].map((i) {
+          items: slideItems.map((item) {
             return Builder(
               builder: (BuildContext context) {
-                return const Slide();
+                return SlideContainer(
+                  slideItem: item,
+                );
               },
             );
           }).toList(),
         ),
         const Gap(14),
         DotsIndicator(
-          dotsCount: 5,
+          dotsCount: slideItems.length,
           position: currentIndex,
           onTap: (index) {
             controller.animateToPage(index);
           },
           decorator: DotsDecorator(
-            color: Colors.white,
+            color: AppColors.dotsColor,
             activeColor: AppColors.primaryBlueColor,
-            size: const Size.square(12.0),
+            size: const Size.square(8),
             activeSize: const Size(8, 8),
             activeShape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12.0),
@@ -74,11 +85,10 @@ class _HomeSliderState extends State<HomeSlider> {
   }
 }
 
-class Slide extends StatelessWidget {
-  const Slide({
-    super.key,
-  });
-
+// ignore: must_be_immutable
+class SlideContainer extends StatelessWidget {
+  SlideContainer({super.key, required this.slideItem});
+  SlideItem slideItem;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -103,14 +113,14 @@ class Slide extends StatelessWidget {
                   style: TextStyles.bundText,
                 ),
                 Text(
-                  'Standard',
+                  slideItem.title,
                   style: TextStyles.standardText,
                 ),
                 const Gap(18),
                 const StartNowButton(),
               ],
             ),
-            Image.asset(getImg('swiss_banking'), width: 147),
+            Image.asset(slideItem.img, width: 100),
           ],
         ),
       ),

@@ -15,4 +15,11 @@ class AppColors {
   static const Color disabledGreyColor = Color(0xffF8F8F8); // F8F8F8
   static const Color blackColor = Color(0xff000000); // 000000
   static const Color buttonColor = Color(0xffF3F4F6); // F3F4F6
+  static const Color dotsColor = Color(0xffD9D9D9); // D9D9D9
+  static const Color conditionCardColor = Color(0xffFBFBFB); // FBFBFB
+  static const Color conditionCardImgColor = Color(0xff8A92A7); // 8A92A7
+  static const Color conditionCardTextColor = Color(0xff81858D); // 81858D
+  static const Color inactiveCardColor = Color(0xffF9F9F9); // F9F9F9
+  static const Color inactiveCardIconColor = Color(0xffEDEEF0); // EDEEF0
+  static const Color inactiveCardTextColor = Color(0xffEDEEF0); // EDEEF0
 }

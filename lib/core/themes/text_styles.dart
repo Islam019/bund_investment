@@ -41,4 +41,16 @@ class TextStyles {
     fontSize: 23,
     fontWeight: FontWeight.w400,
   );
+
+  static TextStyle conditionCardText = const TextStyle(
+    color: AppColors.conditionCardTextColor,
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle inActiveConditionCardText = const TextStyle(
+    color: AppColors.inactiveCardTextColor,
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
+  );
 }
