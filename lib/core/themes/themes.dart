@@ -1,6 +1,5 @@
 import 'package:bund/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class AppThemes {
   static final lightTheme = ThemeData(
@@ -11,6 +10,7 @@ class AppThemes {
     highlightColor: Colors.transparent,
     splashFactory: NoSplash.splashFactory,
     useMaterial3: true,
+    fontFamily: 'Lato',
   );
 
   static const lightColorScheme = ColorScheme.light(
@@ -18,7 +18,5 @@ class AppThemes {
     secondary: AppColors.mainTitleBlueColor,
     background: AppColors.scaffoldWhiteColor,
     surface: AppColors.backgroundWhiteColor,
-    onPrimary: Color(0xFFFFFFFF),
-    onSecondary: Color(0xFF000000),
   );
 }
