@@ -1,4 +1,4 @@
-name: Bund 
+name: bund 
 description: "Bund | Investment App"
 publish_to: 'none' 
 version: 1.0.0+1
@@ -15,6 +15,9 @@ dependencies:
   flutter_native_splash: ^2.3.8
   http: ^1.1.2
   icons_launcher: ^2.1.6
+  equatable: ^2.0.5
+  flutter_svg: ^2.0.9
+  gap: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -23,6 +26,12 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
+  assets:
+    - assets/images/
+    - assets/images/logos/
+    - assets/svgs/
+    - assets/svgs/nav_icons/
+    
   fonts:
     - family: Lato
       fonts:
