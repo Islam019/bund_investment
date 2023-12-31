@@ -42,9 +42,9 @@ class _HomeSliderState extends State<HomeSlider> {
           carouselController: controller,
           options: CarouselOptions(
               height: 156.h,
-              viewportFraction: .90,
+              viewportFraction: .92,
               initialPage: 0,
-              enlargeFactor: .7,
+              enlargeFactor: .45,
               enlargeCenterPage: true,
               enlargeStrategy: CenterPageEnlargeStrategy.zoom,
               animateToClosest: true,
