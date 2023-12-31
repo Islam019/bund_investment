@@ -74,7 +74,7 @@ class TextStyles {
 
   static TextStyle paragraphText = TextStyle(
     color: AppColors.subTitleBlueColor,
-    fontSize: 14.sp,
+    fontSize: 12.sp,
     height: 1.8.h,
     fontWeight: FontWeight.w600,
   );

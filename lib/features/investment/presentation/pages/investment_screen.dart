@@ -24,7 +24,7 @@ class InvestmentScreen extends StatelessWidget {
         Expanded(
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
+              padding: EdgeInsets.symmetric(horizontal: 24.h),
               child: Column(
                 children: [
                   Text(
