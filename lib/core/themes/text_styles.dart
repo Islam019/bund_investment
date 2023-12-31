@@ -26,7 +26,18 @@ class TextStyles {
   static TextStyle buttonText = const TextStyle(
     color: AppColors.primaryBlueColor,
     fontSize: 13,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle enabledChipText = const TextStyle(
+    color: AppColors.primaryBlueColor,
+    fontSize: 13,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle disabledChipText = const TextStyle(
+    color: AppColors.primaryBlueColor,
+    fontSize: 13,
+    fontWeight: FontWeight.w600,
   );
 
   // slider text styles
@@ -112,5 +123,17 @@ class TextStyles {
     color: AppColors.backgroundWhiteColor,
     fontSize: 16,
     fontWeight: FontWeight.w800,
+  );
+
+  static TextStyle investmentAmountText = const TextStyle(
+    color: AppColors.primaryBlueColor,
+    fontSize: 36,
+    fontWeight: FontWeight.w800,
+  );
+
+  static TextStyle smallValueCalcCard = const TextStyle(
+    color: AppColors.bondsValueColor,
+    fontSize: 13,
+    fontWeight: FontWeight.w600,
   );
 }

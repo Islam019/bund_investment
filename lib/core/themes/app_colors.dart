@@ -24,4 +24,5 @@ class AppColors {
   static const Color borderColor = Color(0xffE9EAEF); // E9EAEF
   static const Color bondsTypeColor = Color(0xff737373); // 737373
   static const Color bondsValueColor = Color(0xff46AF35); // 46AF35
+  static const Color chipColor = Color(0xffEDF7EB); // EDF7EB
 }
