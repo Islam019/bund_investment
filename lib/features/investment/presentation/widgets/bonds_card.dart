@@ -39,6 +39,7 @@ class BondsCard extends StatelessWidget {
                       bond.name,
                       style: TextStyles.bondTitle,
                     ),
+                    const Gap(8),
                     Text(
                       bond.type,
                       style: TextStyles.bondTypeTitle,
