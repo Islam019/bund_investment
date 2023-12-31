@@ -2,7 +2,6 @@ import 'package:bund/core/themes/text_styles.dart';
 import 'package:bund/core/utils/load_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:go_router/go_router.dart';
 
 // ignore: must_be_immutable
 class PagesAppBar extends StatelessWidget {
@@ -29,10 +28,7 @@ class PagesAppBar extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 20, top: 3),
-              child: GestureDetector(
-                onTap: () => GoRouter.of(context).go('/'),
-                child: SvgPicture.asset(getSvgIcon('back_arrow'), width: 24),
-              ),
+              child: SvgPicture.asset(getSvgIcon('back_arrow'), width: 24),
             ),
           ],
         ),

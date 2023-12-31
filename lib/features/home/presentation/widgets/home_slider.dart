@@ -42,12 +42,14 @@ class _HomeSliderState extends State<HomeSlider> {
           options: CarouselOptions(
               height: 156,
               viewportFraction: .90,
-              // initialPage: 0,
+              initialPage: 0,
+              enlargeFactor: .7,
+              enlargeCenterPage: true,
+              enlargeStrategy: CenterPageEnlargeStrategy.zoom,
+              animateToClosest: true,
+              pageSnapping: true,
+              pauseAutoPlayOnTouch: true,
               enableInfiniteScroll: true,
-              autoPlay: true,
-              autoPlayInterval: const Duration(seconds: 3),
-              autoPlayAnimationDuration: const Duration(milliseconds: 1500),
-              autoPlayCurve: Curves.ease,
               onPageChanged: (index, reason) {
                 setState(() {
                   currentIndex = index;
