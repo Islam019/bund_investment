@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:bund/core/themes/app_colors.dart';
 import 'package:bund/core/utils/load_assets.dart';
 import 'package:bund/features/chat/presentation/pages/chat_screen.dart';
@@ -20,15 +22,27 @@ class _MainScreenState extends State<MainScreen> {
 
   final bottomNavigationBarItem = [
     BottomNavigationBarItem(
-      icon: SvgPicture.asset(getNavIcon('home_page_icon')),
+      icon: SvgPicture.asset(
+        getNavIcon('home_page_icon'),
+        color: AppColors.hintGreyColor,
+      ),
+      activeIcon: SvgPicture.asset(getNavIcon('home_page_icon')),
       label: 'Home',
     ),
     BottomNavigationBarItem(
       icon: SvgPicture.asset(getNavIcon('investment_page_icon')),
+      activeIcon: SvgPicture.asset(
+        getNavIcon('investment_page_icon'),
+        color: AppColors.primaryBlueColor,
+      ),
       label: 'Investment',
     ),
     BottomNavigationBarItem(
       icon: SvgPicture.asset(getNavIcon('chat_page_icon')),
+      activeIcon: SvgPicture.asset(
+        getNavIcon('chat_page_icon'),
+        color: AppColors.primaryBlueColor,
+      ),
       label: 'Chat',
     ),
   ];
