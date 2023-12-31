@@ -37,7 +37,7 @@ class FeatureCard extends StatelessWidget {
             width: 30,
             color: isActive
                 ? AppColors.conditionCardImgColor
-                : AppColors.inactiveCardIconColor,
+                : AppColors.inactiveCardTextColor,
           ),
           const Gap(8),
           Center(

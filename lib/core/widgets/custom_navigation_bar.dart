@@ -4,6 +4,7 @@ import 'package:bund/core/themes/app_colors.dart';
 import 'package:bund/core/utils/load_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomNavigationBar extends StatefulWidget {
   const CustomNavigationBar({super.key});
@@ -26,6 +27,12 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
       selectedIndex: index,
       onDestinationSelected: (index) => setState(() {
         this.index = index;
+        if (index == 1) {
+          GoRouter.of(context).go('/investment');
+          // GoRouter.of(context).go('/investment');
+        } else if (index == 0) {
+          GoRouter.of(context).go('/');
+        }
       }),
       destinations: [
         NavigationDestination(

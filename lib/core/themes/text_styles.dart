@@ -53,4 +53,64 @@ class TextStyles {
     fontSize: 12,
     fontWeight: FontWeight.w600,
   );
+
+  static TextStyle pageTitle = const TextStyle(
+    color: AppColors.pageTitleBlueColor,
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle paragraphText = const TextStyle(
+    color: AppColors.subTitleBlueColor,
+    fontSize: 14,
+    height: 1.8,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle hintText = const TextStyle(
+    color: AppColors.hintGreyColor,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle smallHintText = const TextStyle(
+    color: AppColors.hintGreyColor,
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle ytmText = const TextStyle(
+    color: AppColors.primaryBlueColor,
+    fontSize: 31,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle smallSubTitle = const TextStyle(
+    color: AppColors.primaryBlueColor,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle bondTitle = const TextStyle(
+    color: AppColors.blackColor,
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle bondTypeTitle = const TextStyle(
+    color: AppColors.bondsTypeColor,
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle bondValueTitle = const TextStyle(
+    color: AppColors.bondsValueColor,
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle createInvestmentText = const TextStyle(
+    color: AppColors.backgroundWhiteColor,
+    fontSize: 16,
+    fontWeight: FontWeight.w800,
+  );
 }

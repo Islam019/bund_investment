@@ -20,6 +20,8 @@ class AppColors {
   static const Color conditionCardImgColor = Color(0xff8A92A7); // 8A92A7
   static const Color conditionCardTextColor = Color(0xff81858D); // 81858D
   static const Color inactiveCardColor = Color(0xffF9F9F9); // F9F9F9
-  static const Color inactiveCardIconColor = Color(0xffEDEEF0); // EDEEF0
   static const Color inactiveCardTextColor = Color(0xffEDEEF0); // EDEEF0
+  static const Color borderColor = Color(0xffE9EAEF); // E9EAEF
+  static const Color bondsTypeColor = Color(0xff737373); // 737373
+  static const Color bondsValueColor = Color(0xff46AF35); // 46AF35
 }

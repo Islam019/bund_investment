@@ -1,6 +1,6 @@
+import 'package:bund/core/routes/routes.dart';
 import 'package:bund/core/themes/system_overlay_style.dart';
 import 'package:bund/core/themes/themes.dart';
-import 'package:bund/features/home/presentation/pages/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -15,8 +15,10 @@ class BundApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemOverlayStyles.systemUiOverlayStyleLight,
-      child: MaterialApp(
-        home: const HomeScreen(),
+      child: MaterialApp.router(
+        routerConfig: router,
+
+        // home: const HomeScreen(),
         debugShowCheckedModeBanner: false,
         title: 'bünd',
         theme: AppThemes.lightTheme,
