@@ -164,11 +164,11 @@ class InvestmentCalc extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Capital At Maturity',
+                  'Annual Interest',
                   style: TextStyles.smallHintText,
                 ),
                 Text(
-                  'Total Interest',
+                  'Average Maturity Date',
                   style: TextStyles.smallHintText,
                 ),
               ],
@@ -178,11 +178,11 @@ class InvestmentCalc extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '\$10,681',
+                  '\$68.1',
                   style: TextStyles.bundText,
                 ),
                 Text(
-                  '\$681',
+                  '2026',
                   style: TextStyles.bundText,
                 ),
               ],
