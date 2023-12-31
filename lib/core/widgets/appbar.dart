@@ -1,6 +1,7 @@
 import 'package:bund/core/themes/text_styles.dart';
 import 'package:bund/core/utils/load_assets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 // ignore: must_be_immutable
@@ -27,8 +28,8 @@ class PagesAppBar extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 20, top: 3),
-              child: SvgPicture.asset(getSvgIcon('back_arrow'), width: 24),
+              padding: EdgeInsets.only(left: 20.w, top: 3.h),
+              child: SvgPicture.asset(getSvgIcon('back_arrow'), width: 24.w),
             ),
           ],
         ),

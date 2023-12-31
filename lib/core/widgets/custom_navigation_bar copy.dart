@@ -3,6 +3,7 @@
 import 'package:bund/core/themes/app_colors.dart';
 import 'package:bund/core/utils/load_assets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 
@@ -21,7 +22,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
       surfaceTintColor: AppColors.backgroundWhiteColor,
       backgroundColor: AppColors.backgroundWhiteColor,
       indicatorColor: Colors.transparent,
-      height: 85,
+      height: 85.h,
       elevation: 5,
       shadowColor: AppColors.blackColor,
       selectedIndex: index,

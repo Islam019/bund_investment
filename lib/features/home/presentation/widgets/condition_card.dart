@@ -4,6 +4,7 @@ import 'package:bund/core/themes/app_colors.dart';
 import 'package:bund/core/themes/text_styles.dart';
 import 'package:bund/core/utils/load_assets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 
@@ -19,8 +20,8 @@ class ConditionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 85,
-      width: 172,
+      height: 85.h,
+      width: 165.w,
       decoration: const BoxDecoration(
           color: AppColors.conditionCardColor,
           borderRadius: BorderRadius.all(Radius.circular(6))),
@@ -29,7 +30,7 @@ class ConditionCard extends StatelessWidget {
         children: [
           SvgPicture.asset(
             getSvgIcon(icon),
-            width: 30,
+            width: 30.w,
             color: AppColors.conditionCardImgColor,
           ),
           const Gap(8),

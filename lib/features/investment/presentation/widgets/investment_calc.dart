@@ -2,6 +2,7 @@ import 'package:bund/core/themes/app_colors.dart';
 import 'package:bund/core/themes/text_styles.dart';
 import 'package:bund/core/utils/load_assets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 
@@ -16,8 +17,7 @@ class InvestmentCalc extends StatelessWidget {
       decoration: const BoxDecoration(
           color: AppColors.backgroundWhiteColor,
           borderRadius: BorderRadius.all(Radius.circular(10))),
-      width: 343,
-      // height: 346,
+      width: 343.w,
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -46,7 +46,7 @@ class InvestmentCalc extends StatelessWidget {
                     ),
                     child: SvgPicture.asset(
                       getSvgIcon('-'),
-                      height: 55,
+                      height: 55.h,
                     ),
                   ),
                 ),
@@ -73,7 +73,7 @@ class InvestmentCalc extends StatelessWidget {
                     ),
                     child: SvgPicture.asset(
                       getSvgIcon('+'),
-                      height: 55,
+                      height: 55.h,
                     ),
                   ),
                 ),

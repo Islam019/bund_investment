@@ -5,6 +5,7 @@ import 'package:bund/core/themes/text_styles.dart';
 import 'package:bund/core/utils/load_assets.dart';
 import 'package:bund/features/investment/domain/entities/bond.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 
 class BondsCard extends StatelessWidget {
@@ -16,8 +17,8 @@ class BondsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 72,
-      width: 343,
+      height: 72.h,
+      width: 343.w,
       decoration: const BoxDecoration(
         color: AppColors.backgroundWhiteColor,
         borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -29,7 +30,7 @@ class BondsCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                Image.asset(getImg(bond.img), width: 48),
+                Image.asset(getImg(bond.img), width: 48.w),
                 const Gap(10),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,

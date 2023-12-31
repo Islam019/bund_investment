@@ -6,6 +6,7 @@ import 'package:bund/features/investment/presentation/widgets/bonds_collections.
 import 'package:bund/features/investment/presentation/widgets/create_investment_button.dart';
 import 'package:bund/features/investment/presentation/widgets/investment_calc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 
 // ignore: must_be_immutable
@@ -76,8 +77,8 @@ class InvestmentScreen extends StatelessWidget {
                   Row(
                     children: [
                       Container(
-                        width: 106,
-                        height: 30,
+                        width: 106.w,
+                        height: 30.h,
                         decoration: BoxDecoration(
                             color: AppColors.backgroundWhiteColor,
                             borderRadius:
@@ -94,8 +95,8 @@ class InvestmentScreen extends StatelessWidget {
                       ),
                       const Gap(12),
                       Container(
-                        width: 106,
-                        height: 30,
+                        width: 106.w,
+                        height: 30.h,
                         decoration: BoxDecoration(
                             color: AppColors.backgroundWhiteColor,
                             borderRadius:

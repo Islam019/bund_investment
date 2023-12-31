@@ -7,13 +7,14 @@ import 'package:bund/features/home/presentation/widgets/start_now_button.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 
 List<SlideItem> slideItems = [
-  SlideItem(img: getImg('swiss_banking'), title: 'Standard', imgWidth: 147),
-  SlideItem(img: getImg('cim'), title: 'Plus', imgWidth: 93),
-  SlideItem(img: getImg('ubs'), title: 'Max', imgWidth: 120),
-  SlideItem(img: getImg('ubs'), title: 'Unlimited', imgWidth: 120)
+  SlideItem(img: getImg('swiss_banking'), title: 'Standard', imgWidth: 147.w),
+  SlideItem(img: getImg('cim'), title: 'Plus', imgWidth: 93.w),
+  SlideItem(img: getImg('ubs'), title: 'Max', imgWidth: 120.w),
+  SlideItem(img: getImg('ubs'), title: 'Unlimited', imgWidth: 120.w)
 ];
 
 class HomeSlider extends StatefulWidget {
@@ -40,7 +41,7 @@ class _HomeSliderState extends State<HomeSlider> {
         CarouselSlider(
           carouselController: controller,
           options: CarouselOptions(
-              height: 156,
+              height: 156.h,
               viewportFraction: .90,
               initialPage: 0,
               enlargeFactor: .7,
@@ -76,7 +77,7 @@ class _HomeSliderState extends State<HomeSlider> {
             color: AppColors.dotsColor,
             activeColor: AppColors.primaryBlueColor,
             size: const Size.square(8),
-            activeSize: const Size(8, 8),
+            activeSize: Size(8.w, 8.h),
             activeShape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12.0),
             ),
@@ -97,8 +98,8 @@ class SlideContainer extends StatelessWidget {
       padding: const EdgeInsets.all(0),
       child: Container(
         margin: const EdgeInsets.only(right: 16),
-        height: 156,
-        width: 330,
+        height: 156.h,
+        width: 330.w,
         decoration: const BoxDecoration(
           color: AppColors.backgroundWhiteColor,
         ),
@@ -122,7 +123,11 @@ class SlideContainer extends StatelessWidget {
                 const StartNowButton(),
               ],
             ),
-            Image.asset(slideItem.img, width: 100),
+            Image.asset(
+              slideItem.img,
+              width: 145.w,
+              height: 65.h,
+            ),
           ],
         ),
       ),

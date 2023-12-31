@@ -1,139 +1,140 @@
 import 'package:bund/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TextStyles {
 // App Bar Text Styles
-  static TextStyle greetingText = const TextStyle(
+  static TextStyle greetingText = TextStyle(
     color: AppColors.subTitleBlueColor,
-    fontSize: 10,
+    fontSize: 10.sp,
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle usernameText = const TextStyle(
+  static TextStyle usernameText = TextStyle(
     color: AppColors.primaryBlueColor,
-    fontSize: 14,
+    fontSize: 14.sp,
     fontWeight: FontWeight.w600,
   );
 
 // Home Page Text Styles
-  static TextStyle subTitleText = const TextStyle(
+  static TextStyle subTitleText = TextStyle(
     color: AppColors.subTitleBlueColor,
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w600,
   );
 
 // slider text style
-  static TextStyle buttonText = const TextStyle(
+  static TextStyle buttonText = TextStyle(
     color: AppColors.primaryBlueColor,
-    fontSize: 13,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle enabledChipText = const TextStyle(
+  static TextStyle enabledChipText = TextStyle(
     color: AppColors.primaryBlueColor,
-    fontSize: 13,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w600,
   );
-  static TextStyle disabledChipText = const TextStyle(
+  static TextStyle disabledChipText = TextStyle(
     color: AppColors.primaryBlueColor,
-    fontSize: 13,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w600,
   );
 
   // slider text styles
-  static TextStyle bundText = const TextStyle(
+  static TextStyle bundText = TextStyle(
     color: AppColors.primaryBlueColor,
-    fontSize: 23,
+    fontSize: 23.sp,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle standardText = const TextStyle(
+  static TextStyle standardText = TextStyle(
     color: AppColors.disableIconGreyColor,
-    fontSize: 23,
+    fontSize: 23.sp,
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle conditionCardText = const TextStyle(
+  static TextStyle conditionCardText = TextStyle(
     color: AppColors.conditionCardTextColor,
-    fontSize: 12,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle inActiveConditionCardText = const TextStyle(
+  static TextStyle inActiveConditionCardText = TextStyle(
     color: AppColors.inactiveCardTextColor,
-    fontSize: 12,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle pageTitle = const TextStyle(
+  static TextStyle pageTitle = TextStyle(
     color: AppColors.pageTitleBlueColor,
-    fontSize: 20,
+    fontSize: 20.sp,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle paragraphText = const TextStyle(
+  static TextStyle paragraphText = TextStyle(
     color: AppColors.subTitleBlueColor,
-    fontSize: 14,
-    height: 1.8,
+    fontSize: 14.sp,
+    height: 1.8.h,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle hintText = const TextStyle(
+  static TextStyle hintText = TextStyle(
     color: AppColors.hintGreyColor,
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle smallHintText = const TextStyle(
+  static TextStyle smallHintText = TextStyle(
     color: AppColors.hintGreyColor,
-    fontSize: 14,
+    fontSize: 14.sp,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle ytmText = const TextStyle(
+  static TextStyle ytmText = TextStyle(
     color: AppColors.primaryBlueColor,
-    fontSize: 31,
+    fontSize: 31.sp,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle smallSubTitle = const TextStyle(
+  static TextStyle smallSubTitle = TextStyle(
     color: AppColors.primaryBlueColor,
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle bondTitle = const TextStyle(
+  static TextStyle bondTitle = TextStyle(
     color: AppColors.blackColor,
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle bondTypeTitle = const TextStyle(
+  static TextStyle bondTypeTitle = TextStyle(
     color: AppColors.bondsTypeColor,
-    fontSize: 12,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w400,
   );
-  static TextStyle bondValueTitle = const TextStyle(
+  static TextStyle bondValueTitle = TextStyle(
     color: AppColors.bondsValueColor,
-    fontSize: 14,
+    fontSize: 14.sp,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle createInvestmentText = const TextStyle(
+  static TextStyle createInvestmentText = TextStyle(
     color: AppColors.backgroundWhiteColor,
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w800,
   );
 
-  static TextStyle investmentAmountText = const TextStyle(
+  static TextStyle investmentAmountText = TextStyle(
     color: AppColors.primaryBlueColor,
-    fontSize: 36,
+    fontSize: 36.sp,
     fontWeight: FontWeight.w800,
   );
 
-  static TextStyle smallValueCalcCard = const TextStyle(
+  static TextStyle smallValueCalcCard = TextStyle(
     color: AppColors.bondsValueColor,
-    fontSize: 13,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w600,
   );
 }

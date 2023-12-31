@@ -3,6 +3,7 @@ import 'package:bund/core/themes/themes.dart';
 import 'package:bund/features/home/presentation/pages/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   runApp(const BundApp());
@@ -15,12 +16,15 @@ class BundApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemOverlayStyles.systemUiOverlayStyleLight,
-      child: MaterialApp(
-        // routerConfig: router,
-        home: const MainScreen(),
-        debugShowCheckedModeBanner: false,
-        title: 'bünd',
-        theme: AppThemes.lightTheme,
+      child: ScreenUtilInit(
+        designSize: const Size(375, 825),
+        minTextAdapt: true,
+        child: MaterialApp(
+          home: const MainScreen(),
+          debugShowCheckedModeBanner: false,
+          title: 'bünd',
+          theme: AppThemes.lightTheme,
+        ),
       ),
     );
   }

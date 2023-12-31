@@ -3,6 +3,7 @@ import 'package:bund/core/themes/text_styles.dart';
 import 'package:bund/core/utils/load_assets.dart';
 import 'package:bund/core/widgets/appbar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 
@@ -31,7 +32,7 @@ class ChatScreen extends StatelessWidget {
                 const Gap(125),
                 SvgPicture.asset(
                   getSvgIcon('chat_with_us'),
-                  width: 150,
+                  width: 150.w,
                 ),
                 const Gap(140),
                 Padding(
@@ -41,8 +42,8 @@ class ChatScreen extends StatelessWidget {
                       color: AppColors.primaryBlueColor,
                       borderRadius: BorderRadius.all(Radius.circular(6)),
                     ),
-                    height: 56,
-                    width: MediaQuery.sizeOf(context).width,
+                    height: 56.h,
+                    width: MediaQuery.sizeOf(context).width.w,
                     child: Center(
                         child: Text(
                       'Start New Conversation',
