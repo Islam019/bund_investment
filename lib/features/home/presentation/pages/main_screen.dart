@@ -53,6 +53,7 @@ class _MainScreenState extends State<MainScreen> {
       resizeToAvoidBottomInset: true,
       backgroundColor: AppColors.scaffoldWhiteColor,
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 0,
         items: bottomNavigationBarItem,
         currentIndex: currentIndex,
         onTap: (index) {
